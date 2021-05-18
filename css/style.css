@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the header */
+.header {
+  background-color:white;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 50px;
+  
+}
+p{
+  font: size 100px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color:darkblue;
+  margin: 10;
+}
+
+ul {
+  font-size:large;
+  font-family: Arial;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+li {
+    font-size:large;
+  font-family: Arial;
+  padding: 10px;
+  list-style-type: none;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+.column {
+  float: left;
+  padding-left: 20px;
+}
+
+.column.left {   
+  width: 75%;
+  height:50%;
+}
+
+.column.right {
+  width: 25%;
+  height:50%
+ 
+}
+
+/* image */
+.img {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:white;
+  padding: 20px;
+  margin-top: 20px;
+  height:auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .column.left, .column.right {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align:left;
+  padding: 10px ,0;
+  font-size: 30px;
+}
+.grid-container.form {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 20px 20px 20px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container.form > div {
+  text-align:center;
+  padding: 10px ,0;
+  font-size: 30px;
+}
